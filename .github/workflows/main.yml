@@ -2,6 +2,8 @@ name: Docker Build & Push
 
 on:
   push:
+    branches:
+      - main   # optional: run only on main; remove or change if you want all branches
 
 jobs:
   build:
@@ -21,6 +23,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: |
-            abhinandss0117a/devop5:latest
-            abhinandss0117a/devop5:${{ github.sha }}
+          tags:
+            - abhinandss0117a/devop5:latest
+            - abhinandss0117a/devop5:${{ github.sha }}
