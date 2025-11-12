@@ -21,4 +21,6 @@ jobs:
         with: 
           context: .
           push: true 
-          tags: abhinandss0117a/devop5:latest
+          tags:
+            - abhinandss0117a/devop5:latest
+            - abhinandss0117a/devop5:${{ github.sha }}
