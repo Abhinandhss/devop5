@@ -21,4 +21,4 @@ jobs:
         with: 
           context: .
           push: true 
-          tags: abhinandss0117a/demo:latest
+          tags: abhinandss0117a/devop5:latest
